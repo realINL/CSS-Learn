@@ -1,0 +1,332 @@
+.text-align-page-container {
+  margin-left: 250px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+}
+
+.text-align-page-header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.text-align-title {
+  color: #2c3e50;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-align-page-header p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.text-align-content {
+}
+
+.text-align-section {
+}
+
+.text-align-section h2 {
+}
+
+.text-align-section p {
+  color: #ffffff;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0.5rem 0 0.75rem 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.text-align-section strong {
+  color: #ffffff;
+  opacity: 1;
+}
+
+
+
+/* Примеры text-align */
+.text-align-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.text-align-example {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-align-example:hover {
+  transform: translateY(-2px);
+}
+
+.text-align-example.left { text-align: left; }
+.text-align-example.center { text-align: center; }
+.text-align-example.right { text-align: right; }
+.text-align-example.justify { text-align: justify; }
+
+/* Сравнение выравниваний */
+.text-align-comparison {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* width: 100px; */
+}
+
+.comparison-item .label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+  width: 80px;
+}
+
+.comparison-item .text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  width: 80%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.comparison-item .text.left { 
+  text-align: left; 
+  justify-content: flex-start;
+}
+.comparison-item .text.center { 
+  text-align: center; 
+  justify-content: center;
+}
+.comparison-item .text.right { 
+  text-align: right; 
+  justify-content: flex-end;
+}
+.comparison-item .text.justify { 
+  text-align: justify; 
+  justify-content: center;
+}
+
+/* Интерактивный демо */
+.interactive-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.demo-text {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.demo-text:hover {
+  border-color: rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Editor styles */
+.editor {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: #2c3e50;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editor-textarea {
+  width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #2c3e50;
+  background: transparent;
+}
+
+.editor-error {
+  color: #c0392b;
+  background: #fdecea;
+  border-top: 1px solid #f5c6cb;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+/* Task card */
+.task-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Emphasize task title and description */
+.task-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.task-card p {
+  font-size: 1.15rem;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+/* Bigger, more prominent buttons */
+.task-actions .btn {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.05rem;
+  border-radius: 30px;
+}
+
+.task-status {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.task-status.success {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.35);
+}
+
+.task-status.error {
+  background: rgba(231, 76, 60, 0.15);
+  color: #9e1100;
+  border: 1px solid rgba(231, 76, 60, 0.35);
+}
+
+.solution-block {
+  margin-top: 0.75rem;
+}
+
+/* Body text styling inside text-align sections */
+.text-align-section p code {
+  background: rgba(0, 0, 0, 0.35);
+  color: #f7df1e;
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .text-align-page-container {
+    margin-left: 0;
+  }
+  
+  .interactive-demo {
+    grid-template-columns: 1fr;
+  }
+  
+  .text-align-examples {
+    grid-template-columns: 1fr;
+  }
+  
+  .task-actions {
+    flex-direction: column;
+  }
+  
+  .task-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

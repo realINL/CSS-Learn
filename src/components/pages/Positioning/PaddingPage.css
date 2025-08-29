@@ -1,0 +1,412 @@
+.padding-page-container {
+  margin-left: 250px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+}
+
+.padding-page-header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.padding-title {
+  color: #2c3e50;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.padding-page-header p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.padding-content {
+}
+
+.padding-section {
+}
+
+.padding-section h2 {
+}
+
+/* code-block unified in shared.css */
+
+.example-block {
+  margin-bottom: 2rem;
+}
+
+.example-block h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Сравнение Padding vs Margin */
+.comparison-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-card h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.comparison-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-card li {
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.comparison-card li:before {
+  content: "•";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.comparison-card li strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Примеры padding */
+.padding-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.padding-example {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-example:hover {
+  transform: translateY(-2px);
+}
+
+/* Базовые значения */
+.padding-example.padding-0 { padding: 0; }
+.padding-example.padding-10 { padding: 10px; }
+.padding-example.padding-20 { padding: 20px; }
+.padding-example.padding-30 { padding: 30px; }
+
+/* Разные стороны */
+.padding-example.padding-top { padding-top: 20px; }
+.padding-example.padding-right { padding-right: 20px; }
+.padding-example.padding-bottom { padding-bottom: 20px; }
+.padding-example.padding-left { padding-left: 20px; }
+
+/* Сокращённая запись */
+.padding-example.padding-2 { padding: 10px 20px; }
+.padding-example.padding-3 { padding: 10px 20px 15px; }
+.padding-example.padding-4 { padding: 10px 20px 15px 25px; }
+
+/* Визуальное сравнение */
+.padding-comparison {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comparison-item .label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.padding-demo {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-box {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.padding-demo.no-padding .demo-box {
+  padding: 0.5rem 1rem;
+}
+
+.padding-demo.with-padding .demo-box {
+  padding: 0.5rem 1rem;
+}
+
+.padding-demo.more-padding .demo-box {
+  padding: 0.5rem 1rem;
+}
+
+/* Интерактивный демо */
+.interactive-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.demo-container {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-text {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+/* Editor styles */
+.editor {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: #2c3e50;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editor-textarea {
+  width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #2c3e50;
+  background: transparent;
+}
+
+.editor-error {
+  color: #c0392b;
+  background: #fdecea;
+  border-top: 1px solid #f5c6cb;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+/* Task card */
+.task-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Emphasize task title and description */
+.task-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.task-card p {
+  font-size: 1.15rem;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+/* Bigger, more prominent buttons */
+.task-actions .btn {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.05rem;
+  border-radius: 30px;
+}
+
+.task-status {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.task-status.success {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.35);
+}
+
+.task-status.error {
+  background: rgba(231, 76, 60, 0.15);
+  color: #9e1100;
+  border: 1px solid rgba(231, 76, 60, 0.35);
+}
+
+.solution-block {
+  margin-top: 0.75rem;
+}
+
+/* Body text styling inside padding sections */
+.padding-section p {
+  color: #ffffff;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0.5rem 0 0.75rem 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.padding-section p strong {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Inline code tokens within paragraphs */
+.padding-section p code {
+  background: rgba(0, 0, 0, 0.35);
+  color: #f7df1e;
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .padding-page-container {
+    margin-left: 0;
+  }
+  
+  .comparison-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .interactive-demo {
+    grid-template-columns: 1fr;
+  }
+  
+  .padding-examples {
+    grid-template-columns: 1fr;
+  }
+  
+  .task-actions {
+    flex-direction: column;
+  }
+  
+  .task-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

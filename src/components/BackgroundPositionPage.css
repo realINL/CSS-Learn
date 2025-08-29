@@ -1,0 +1,22 @@
+.background-position-page-container { margin-left: 250px; min-height: 100vh; background: linear-gradient(135deg, var(--grad-start) 0%, var(--grad-end) 100%); padding: 0; }
+.background-position-page-header { width: 100%; padding: 1rem 2rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: var(--shadow-strong); text-align: center; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+.background-position-title { color: var(--text-dark); font-weight: 800; font-size: 2.5rem; margin-bottom: 0.3rem; background: linear-gradient(45deg, var(--grad-start), var(--grad-end)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.background-position-content { padding: 2rem; }
+.background-position-section { background: var(--card-bg-glass); backdrop-filter: blur(10px); border-radius: var(--radius-lg); margin-bottom: 2rem; padding: 2rem; box-shadow: var(--shadow-strong); }
+.background-position-examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.background-position-example { background: var(--card-bg-solid); padding: 1rem; border-radius: 10px; font-family: 'Courier New', monospace; font-weight: 600; text-align: center; box-shadow: var(--shadow-soft); transition: transform 0.3s ease; min-height: 80px; display: flex; align-items: center; justify-content: center; color: #333; }
+.background-position-example:hover { transform: translateY(-2px); }
+
+/* Example backgrounds */
+.background-position-example { background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=800&auto=format&fit=crop'); background-repeat: no-repeat; background-size: 120px 120px; }
+.background-position-example .example-text { background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 6px; }
+.background-position-example.ex-left-top { background-position: left top; }
+.background-position-example.ex-center { background-position: center; }
+.background-position-example.ex-right-bottom { background-position: right bottom; }
+.background-position-example.ex-20-40 { background-position: 20px 40px; }
+.background-position-example.ex-50p-50p { background-position: 50% 50%; }
+.background-position-example.ex-100p-0 { background-position: 100% 0%; }
+
+.bgpos-demo { background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 10px; min-height: 220px; display: flex; align-items: center; justify-content: center; color: #333; box-shadow: var(--shadow-soft); }
+
+
