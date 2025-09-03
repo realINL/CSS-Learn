@@ -1,72 +1,8 @@
-.background-page-container {
-  margin-left: 250px;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 0;
-}
-
-.background-page-header {
-  width: 100%;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 0 0 20px 20px;
-}
-
-.background-title {
-  color: #2c3e50;
-  font-weight: 800;
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.background-page-header p {
-  color: #666;
-  font-size: 1rem;
-  margin: 0.3rem 0 1rem 0;
-  font-weight: 400;
-}
-
-.background-content {
-}
-
-.background-section {
-}
-
-.background-section h2 {
-}
 
 
+/* Специфичные стили для background страницы */
 
-.background-examples {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.background-example {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1rem;
-  border-radius: 10px;
-  font-family: 'Courier New', monospace;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  color: #333;
-}
-
-.background-example:hover {
-  transform: translateY(-2px);
-}
-
-/* Именованные цвета фона */
+/* Примеры фоновых цветов */
 .background-example.red-bg { background-color: red; color: white; }
 .background-example.blue-bg { background-color: blue; color: white; }
 .background-example.green-bg { background-color: green; color: white; }
@@ -84,23 +20,16 @@
 .background-example.rgb-green-bg { background-color: rgb(0, 170, 0); }
 .background-example.rgba-purple-bg { background-color: rgba(128, 0, 128, 0.6); }
 
-.interactive-demo {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: stretch;
+/* Дополнительные стили для примеров */
+.background-example {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
 }
 
-@media (max-width: 900px) {
-  .interactive-demo {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* Демо текст */
 .demo-text {
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem;

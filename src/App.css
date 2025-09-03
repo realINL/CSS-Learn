@@ -1,3 +1,52 @@
+@import './styles/shared.css';
+
+/* Основные стили приложения */
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+  
+
+  * {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+
+  button, 
+  .nav-link,
+  .category-header {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+
+  button:focus,
+  .nav-link:focus,
+  .category-header:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  button, 
+  .nav-link,
+  .category-header {
+    min-height: 40px;
+    min-width: 40px;
+  }
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

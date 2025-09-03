@@ -1,15 +1,6 @@
-.height-page-container { margin-left: 250px; min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 0; }
-.height-page-header { width: 100%; padding: 1rem 2rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); text-align: center; border-radius: 0 0 20px 20px; }
-.height-title { color: #2c3e50; font-weight: 800; font-size: 2.5rem; margin-bottom: .3rem; background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.height-page-header p { color: #666; font-size: 1rem; margin: .3rem 0 1rem 0; font-weight: 400; }
-.height-content { }
-.height-section { }
-.height-section h2 { }
-/* code-block unified in shared.css */
-/* example-block and example headings unified in shared.css */
-/* example grid/cards unified in shared.css */
+/* Специфичные стили для height страницы */
 
-/* Visual heights */
+/* Примеры высоты */
 .height-example.h-80 { height: 80px; }
 .height-example.h-100 { height: 100px; }
 .height-example.h-150 { height: 150px; }
@@ -19,14 +10,32 @@
 .height-example.h-max { height: max-content; }
 .height-example.h-fit { height: fit-content(150px); }
 
-.interactive-demo { }
-.demo-container { background: #f8f9fa; border: 2px dashed #dee2e6; border-radius: 10px; padding: 1rem; min-height: 200px; display: flex; align-items: center; justify-content: center; }
-.demo-box { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: .75rem 1rem; border-radius: 8px; font-weight: 700; }
+/* Дополнительные стили для примеров */
+.height-example {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
 
-/* editor unified in shared.css */
+/* Демо контейнер */
+.demo-container { 
+  background: #f8f9fa; 
+  border: 2px dashed #dee2e6; 
+  border-radius: 10px; 
+  padding: 1rem; 
+  min-height: 200px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
 
-/* buttons unified in shared.css */
-
-/* task card unified in shared.css */
-
-@media (max-width: 768px) { .height-page-container { margin-left: 0; } }
+/* Демо блок */
+.demo-box { 
+  background: linear-gradient(135deg, #667eea, #764ba2); 
+  color: #fff; 
+  padding: .75rem 1rem; 
+  border-radius: 8px; 
+  font-weight: 700; 
+}

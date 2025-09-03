@@ -22,7 +22,7 @@ const CatalogPage = () => {
   return (
     <div className="catalog-page-container">
       <header className="catalog-page-header">
-        <h1 className="catalog-title">📚 Каталог CSS Свойств</h1>
+        <h1 className="catalog-title">Каталог CSS Свойств</h1>
         <p>Полный справочник всех доступных CSS свойств с описаниями</p>
       </header>
       

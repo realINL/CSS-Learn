@@ -9,7 +9,7 @@
   width: 100%;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   box-shadow: var(--shadow-strong);
   text-align: center;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
@@ -39,7 +39,7 @@
 
 .catalog-section {
   background: var(--card-bg-glass);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   border-radius: var(--radius-lg);
   margin-bottom: 2rem;
   padding: 2rem;
@@ -69,7 +69,7 @@
   outline: none;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   box-shadow: var(--shadow-soft);
 }
 
@@ -125,7 +125,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .category-filter:hover {
@@ -390,6 +390,34 @@
     margin-left: 0;
   }
   
+  .catalog-page-header {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .catalog-title {
+    font-size: 2rem;
+  }
+  
+  .catalog-page-container {
+    overflow-x: hidden;
+  }
+  
+  .catalog-page-header {
+    overflow-x: hidden;
+  }
+  
+  .catalog-content {
+    padding: 1rem;
+  }
+  
+  .catalog-section {
+    padding: 1.5rem;
+  }
+  
   .properties-grid {
     grid-template-columns: 1fr;
   }
@@ -410,5 +438,46 @@
   
   .stat-number {
     font-size: 2rem;
+  }
+  
+  .category-filter {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  
+  .category-filter:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .category-filter.active {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--grad-start);
+  }
+  
+  .filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  
+  .filter-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .filter-btn.active {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--grad-start);
+  }
+  
+  .clear-filters-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  
+  .clear-filters-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 }

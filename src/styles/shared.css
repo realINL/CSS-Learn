@@ -30,6 +30,7 @@
   min-height: 100vh;
   background: linear-gradient(135deg, var(--grad-start) 0%, var(--grad-end) 100%);
   padding: 0;
+  transition: margin-left 0.3s ease;
 }
 
 /* Page header unified */
@@ -271,7 +272,6 @@
   gap: 1.5rem;
   align-items: stretch;
 }
-@media (max-width: 900px) { .interactive-demo { grid-template-columns: 1fr; } }
 
 /* Editor (shared) */
 .editor { background: rgba(255, 255, 255, 0.95); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-strong); }
@@ -298,3 +298,226 @@
 
 /* Utility */
 .hidden { display: none !important; }
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+  /* Контейнеры страниц */
+  .color-page-container,
+  .background-page-container,
+  .background-image-page-container,
+  .background-position-page-container,
+  .font-family-page-container,
+  .font-size-page-container,
+  .font-weight-page-container,
+  .text-align-page-container,
+  .margin-page-container,
+  .padding-page-container,
+  .width-page-container,
+  .height-page-container {
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Заголовки страниц */
+  .color-page-header,
+  .background-page-header,
+  .background-image-page-header,
+  .background-position-page-header,
+  .font-family-page-header,
+  .font-size-page-header,
+  .font-weight-page-header,
+  .text-align-page-header,
+  .margin-page-header,
+  .padding-page-header,
+  .width-page-header,
+  .height-page-header {
+    padding: 1rem;
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Заголовки */
+  .color-title,
+  .background-title,
+  .background-image-title,
+  .background-position-title,
+  .font-family-title,
+  .font-size-title,
+  .font-weight-title,
+  .text-align-title,
+  .margin-title,
+  .padding-title,
+  .width-title,
+  .height-title {
+    font-size: 2rem;
+  }
+
+  /* Контент страниц */
+  .color-content,
+  .background-content,
+  .background-image-content,
+  .background-position-content,
+  .font-family-content,
+  .font-size-content,
+  .font-weight-content,
+  .text-align-content,
+  .margin-content,
+  .padding-content,
+  .width-content,
+  .height-content {
+    padding: 1rem;
+  }
+
+  /* Секции */
+  .color-section,
+  .background-section,
+  .background-image-section,
+  .background-position-section,
+  .font-family-section,
+  .font-size-section,
+  .font-weight-section,
+  .text-align-section,
+  .margin-section,
+  .padding-section,
+  .width-section,
+  .height-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Заголовки секций */
+  .color-section h2,
+  .background-section h2,
+  .background-image-section h2,
+  .background-position-section h2,
+  .font-family-section h2,
+  .font-size-section h2,
+  .font-weight-section h2,
+  .text-align-section h2,
+  .margin-section h2,
+  .padding-section h2,
+  .width-section h2,
+  .height-section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Интерактивные демо */
+  .interactive-demo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Примеры */
+  .color-examples,
+  .background-examples,
+  .background-image-examples,
+  .font-size-examples,
+  .font-weight-examples,
+  .text-align-examples,
+  .margin-examples,
+  .padding-examples,
+  .width-examples,
+  .height-examples {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Кнопки */
+  .task-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .task-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Код блоки */
+  .code-block {
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .code-block code {
+    font-size: 1rem;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Контейнеры страниц */
+  .color-page-container,
+  .background-page-container,
+  .background-image-page-container,
+  .background-position-page-container,
+  .font-family-page-container,
+  .font-size-page-container,
+  .font-weight-page-container,
+  .text-align-page-container,
+  .margin-page-container,
+  .padding-page-container,
+  .width-page-container,
+  .height-page-container {
+    margin-left: 240px;
+  }
+  
+  /* Заголовки страниц */
+  .color-page-header,
+  .background-page-header,
+  .background-image-page-header,
+  .background-position-page-header,
+  .font-family-page-header,
+  .font-size-page-header,
+  .font-weight-page-header,
+  .text-align-page-header,
+  .margin-page-header,
+  .padding-page-header,
+  .width-page-header,
+  .height-page-header {
+    padding: 1.5rem;
+  }
+
+  /* Контент страниц */
+  .color-content,
+  .background-content,
+  .background-image-content,
+  .background-position-content,
+  .font-family-content,
+  .font-size-content,
+  .font-weight-content,
+  .text-align-content,
+  .margin-content,
+  .padding-content,
+  .width-content,
+  .height-content {
+    padding: 1.5rem;
+  }
+
+  /* Секции */
+  .color-section,
+  .background-section,
+  .background-image-section,
+  .background-position-section,
+  .font-family-section,
+  .font-size-section,
+  .font-weight-section,
+  .text-align-section,
+  .margin-section,
+  .padding-section,
+  .width-section,
+  .height-section {
+    padding: 1.75rem;
+  }
+
+  /* Интерактивные демо */
+  .interactive-demo {
+    gap: 1.25rem;
+    padding: 1.75rem;
+  }
+}
