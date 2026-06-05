@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import ColorPage from './components/ColorPage.tsx'
 import BackgroundPage from './components/BackgroundPage'
@@ -20,7 +20,7 @@ import { PropertiesProvider } from './contexts/PropertiesContext'
 function App() {
   return (
     <PropertiesProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="app">
           <Sidebar />
           <Routes>
@@ -41,7 +41,7 @@ function App() {
             <Route path="/border" element={<div className="coming-soon">Border - скоро</div>} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </PropertiesProvider>
   )
 }
